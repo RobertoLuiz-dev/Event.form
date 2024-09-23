@@ -1,0 +1,230 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body, input, button, select, textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+body::before {
+  content: '';
+  width: 100%;
+  height: 36rem;
+  background: #121214;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.page {
+  width: 74rem;
+  margin: auto;
+}
+
+header {
+  width: 32rem;
+  margin-top: 7.4rem;
+}
+
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-weight: bold;
+  font-size: 3.6rem;
+  line-height: 4.2rem;
+  color: #FFFFFF;
+  margin-bottom: 2.4rem;
+}
+
+p {
+  color: #42D3FF;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+form {
+  background: #fafafc;
+  min-height: 30rem;
+  margin-top: 3.8rem;
+  border-radius: 8px 8px 0 0;
+  padding: 6.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+fieldset {
+  border: none;
+  
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+fieldset legend {
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  color: #32264D;
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+  padding-bottom: 1.6rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  line-height: 2.4erm;
+  color: #4E4958;
+  margin-bottom: .8rem;
+}
+
+.input-wrapper label span {
+  margin-left: 1.2rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover {
+  color: #52746d;
+}
+
+.input-wrapper input {
+  background: #FAFAFC;
+  border: 1px solid #e6e6f0;
+  border-radius: .8rem;
+  height: 5.6rem;
+  padding: 0 24px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #c1bccc;
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 16.8rem;
+  background: #FAFAFC;
+  border: 1px solid #e6e6f0;
+  border-radius: .8rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #c1bccc;
+  padding: 0 2.4rem;
+}
+
+.input-wrapper select {
+  background: #FAFAFC;
+  border: 1px solid #e6e6f0;
+  border-radius: .8rem;
+  height: 5.6rem;
+  padding: 0 2.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: #c1bccc;
+
+  appearance: none;
+
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 2.4rem top 50%;
+}
+
+.col-3 {
+  display: flex;
+  gap: 2rem;
+}
+
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.checkbox-wrapper label {
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  color: #4E4958;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.checkbox-wrapper input {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: .2rem solid #e6e6f0;
+  border-radius: 8rem;
+  background: url("data:image/svg+xml,%3Csvg width='18' height='14' viewBox='0 0 18 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6 11.17L1.83 7L0.410004 8.41L6 14L18 2L16.59 0.589996L6 11.17Z' fill='%2342D3FF'/%3E%3C/svg%3E%0A");
+}
+
+.checkbox-wrapper label::before {
+  content: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: block;
+  border: .2rem solid #e6e6f0;
+  border-radius: .8rem;
+}
+
+footer {
+  height: 13.6rem;
+  background: #F0F0F4;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 6.4rem;
+  margin-bottom: 4rem;
+  border-radius: 0 0 .8rem .8rem;
+}
+
+footer input {
+  height: 12rem;
+  width: 60.8rem;
+  background: #04D361;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  border: none;
+  border-radius: .8rem;
+}
+
+.creator {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.creator a {
+  margin-left: .1rem;
+}
+
+#avatar {
+  margin: 1rem;
+  aspect-ratio: 1;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+#avatar:hover {
+  transform: rotate(15deg) scale(1.2);
+  transition: all .8s;
+  cursor: pointer;
+}
