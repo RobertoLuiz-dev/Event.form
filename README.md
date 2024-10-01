@@ -1,4 +1,4 @@
-Vamos de formulários agora. Esse pra agendar um evento!
+Vamos de formulários agora. Esse pra agendar um evento...
 
 ![image](https://github.com/user-attachments/assets/382bbdf4-bd03-41b9-ba37-caccfebda29c)
 ![image](https://github.com/user-attachments/assets/94ec3ab9-4f11-428a-ae57-95a5d8ae2443)
